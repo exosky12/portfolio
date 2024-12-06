@@ -1,0 +1,457 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of reset.css */
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url("../assets/white-paper-texture.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: "Chilanka", cursive;
+    font-weight: 400;
+    font-style: normal;
+    gap: 300px;
+}
+
+.hero {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100svh;
+    display: flex;
+    position: relative;
+}
+
+.hero .baseline {
+    margin-bottom: 100px;
+    line-height: 60px;
+    font-size: calc(24px + 1.5vw);
+}
+
+.hero .scrollToDiscover {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 20px;
+    inset: auto 0 4%;
+}
+
+.hero .scrollToDiscover h2 {
+    font-size: calc(18px + 0.6vw);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    max-width: 100vw;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.history h2 {
+    font-size: calc(24px + 1.5vw);
+}
+
+.history p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.beginnings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+}
+
+.beginnings h2 {
+    font-size: calc(24px + 1.5vw);
+}
+
+.imagesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.imagesContainer img {
+    width: 45%;
+    height: 500px;
+    object-fit: cover;
+    border: 1px solid #b9b9b9;
+    border-radius: 20px;
+}
+
+.designDiscovery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.designDiscovery h2 {
+    font-size: calc(24px + 1.5vw);
+}
+
+.designDiscovery p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.designDiscovery img {
+    height: 800px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+    max-width: 1400px;
+    width: 90%;
+}
+
+.projects h2 {
+    font-size: calc(24px + 1.5vw);
+}
+
+.projects p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.projects .projectsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 154px;
+    width: 90%;
+    min-width: 280px;
+}
+
+.projects .projectsContainer .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    gap: 6%;
+    width: 100%;
+}
+
+.projects .projectsContainer .project .projectImage {
+    width: 28%;
+    height: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+    min-width: 400px;
+
+}
+
+.projects .projectsContainer .project .projectContent {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: left;
+}
+
+.projects .projectsContainer .project .projectContent .firstContent {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-direction: column;
+}
+
+.projects .projectsContainer .project .projectContent h3 {
+    font-size: calc(18px + 0.6vw);
+}
+
+.projects .projectsContainer .project .projectContent p {
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.projects .projectsContainer .project .projectContent .buttonsContainer {
+    display: flex;
+    gap: 20px;
+    width: auto;
+}
+
+.projects .projectsContainer .project .projectContent a img {
+    width: 140px;
+    height: 60px;
+}
+
+.projects .projectsContainer .project .projectContent a img:hover {
+    opacity: 0.6;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+.moreAboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.moreAboutMe h2 {
+    font-size: calc(24px + 1.5vw);
+}
+
+.moreAboutMe p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.school {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.school h2 {
+    font-size: calc(24px + 1.5vw);
+}
+
+.school p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.whyAmI {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+    max-width: 1200px;
+    width: 80%;
+}
+
+.whyAmI h2 {
+    font-size: calc(24px + 1.5vw);
+}
+
+.whyAmI p {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+    max-width: 1200px;
+    width: 80%;
+    height: 60vh;
+}
+
+.socials h2 {
+    font-size: calc(24px + 1.5vw);
+}
+
+.socials .socialsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials .socialsContainer img {
+    width: 70px;
+    height: 70px;
+}
+
+
+@media only screen and (max-width: 1070px) {
+    .baseline {
+        line-height: 40px;
+    }
+
+    .imagesContainer {
+        flex-direction: column;
+    }
+
+    .projectImage {
+        width: 280px;
+    }
+
+    .imagesContainer img {
+        width: 90%;
+        height: 400px;
+    }
+
+    .designDiscovery img {
+        height: auto;
+        width: 60%;
+        object-fit: fill;
+    }
+
+    .projects .projectsContainer {
+        gap: 450px;
+        margin-top: 200px;
+    }
+
+    .projects .projectsContainer .project {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .projects .projectsContainer .project .projectImage {
+        width: 100%;
+        height: 400px;
+        min-height: 350px;
+        min-width: 280px;
+    }
+
+    .projects .projectsContainer .project .projectContent {
+        width: 100%;
+        gap: 90px;
+    }
+
+    .path6 {
+        margin-top: 100px;
+    }
+
+    p {
+        text-align: left;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .path6 {
+        margin-top: 300px;
+    }
+
+    .projectImage {
+        width: 80%;
+    }
+
+    .imagesContainer {
+        width: 100%;
+    }
+
+    .imagesContainer img {
+        height: 100%;
+    }
+
+    .designDiscovery img {
+        height: auto;
+        min-height: 300px;
+        width: 90%;
+        object-fit: fill;
+    }
+
+    .projects .projectsContainer {
+        gap: 700px;
+    }
+
+    .school p {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .buttonsContainer {
+        flex-direction: column;
+    }
+
+    .baseline {
+        line-height: 30px;
+    }
+}
