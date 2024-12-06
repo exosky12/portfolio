@@ -55,6 +55,21 @@ table {
 
 /* End of reset.css */
 
+.downloadCV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background: #fff;
+    margin-top: 20px;
+    position: fixed;
+    font-size: 16px;
+    top: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
 body {
     min-height: 100vh;
     min-width: 100vw;
